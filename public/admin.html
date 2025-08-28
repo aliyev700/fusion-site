@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADMIN</title>
+    <link rel="stylesheet" href="../src/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet">
+</head>
+
+<body class="px-20 py-10">
+    <h1 class="text-6xl font-semibold mb-8 font-lora">Yeni məhsul</h1>
+    <form id="form" class="flex flex-col gap-4">
+        <input id="title" class="border border-gray-300 p-3 px-5 rounded-full text-xl" placeholder="Elan başlığı"
+            required>
+        <input id="user" class="border border-gray-300 p-3 px-5 rounded-full text-xl" placeholder="İstifadəçi" required>
+        <input id="image" class="border border-gray-300 p-3 px-5 rounded-full text-xl" placeholder="Şəkil URL" required>
+        <input id="location" class="border border-gray-300 p-3 px-5 rounded-full text-xl" placeholder="Məkan" required>
+        <div class="flex gap-4 justify-between">
+            <input id="bedrooms" class="border border-gray-300 p-3 px-5 w-1/3 rounded-full text-xl"
+                placeholder="Yataq otağı sayı" type="number" required>
+            <input id="showers" class="border border-gray-300 p-3 px-5 w-1/3 rounded-full text-xl"
+                placeholder="Hamam sayı" type="number" required>
+            <input id="sqfts" class="border border-gray-300 p-3 px-5 w-1/3 rounded-full text-xl"
+                placeholder="Ümumi sahə (sqft)" type="number" required>
+            <input id="price" class="border border-gray-300 p-3 px-5 w-1/3 rounded-full text-xl" placeholder="Qiymət"
+                type="number" required>
+        </div>
+
+        <button type="submit"
+            class="bg-[#793cfb] text-white font-semibold px-5 w-full m-auto p-3 rounded-full text-xl cursor-pointer hover:bg-[#6828c5]">Əlavə
+            et</button>
+
+    </form>
+    <h2 class="text-6xl font-semibold mb-8 font-lora mt-22">Məhsullar siyahısı:</h2>
+    <div id="admin-products"></div>
+
+
+
+    <button onclick="window.location.href='index.html'">Go to Home</button>
+    <script src="./src/admin.js"></script>
+</body>
+
+</html>
