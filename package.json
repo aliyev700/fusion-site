@@ -1,0 +1,23 @@
+{
+  "name": "ford-fusion",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aliyev700/fusion-site.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aliyev700/fusion-site/issues"
+  },
+  "homepage": "https://github.com/aliyev700/fusion-site#readme",
+  "description": "",
+  "devDependencies": {
+    "json-server": "^1.0.0-beta.3"
+  }
+}
