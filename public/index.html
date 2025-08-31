@@ -519,11 +519,11 @@
       }
       
       function renderProperties(properties) {
-        propertiesList.innerHTML = ""; // очищаем контейнер перед рендером
+        propertiesList.innerHTML = ""; 
         properties.forEach((p) => {
           const html = `
             <div class="homeinmerric border shadow-2xl w-[380px] h-[500px] mt-14">
-              <!-- тут вставляем HTML карточки, как я прислал -->
+             
               <div class="img1 w-[379px] overflow-hidden">
                 <img class="w-[380px] h-[280px] transition-transform duration-500 hover:scale-110" 
                      src="${p.photo || 'https://picsum.photos/380/280'}" alt="">
@@ -553,7 +553,6 @@
         });
       }
       
-      // запускаем загрузку при открытии страницы
       fetchProperties();
       </script>
       
